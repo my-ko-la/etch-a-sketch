@@ -11,16 +11,16 @@
     <div class="menu-container">
         <div class="menu">Etch-a-Sketch Menu</div>
         <div class="slider-container">
-            <input type="range" min="4" max="100" value="4" id="slider-id" class="slider-class">
+            <input type="range" min="4" max="100" value="16" id="slider-id" class="slider-class">
             <p>Number of squares: <span id="sqnum"></span></p>
         </div>
         <div class="drawing-buttons">
-            <button id="rainbow" class="btn">RAINBOW</button>
-            <button id="gamermode" class="btn">GAMERMODE</button>
-            <button id="refresh" class="btn">REFRESH</button>
+            <button onclick="rainbowStyle()" id="rainbow" class="btn">RAINBOW</button>
+            <button onclick="thisGuyIsGaming()" id="gamermode" class="btn">GAMERMODE</button>
+            <button onclick="refreshDivsBG()" id="refresh" class="btn">REFRESH</button>
         </div>
     </div>
     <div class="main-container" id="gridContainer"></div>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>

@@ -38,9 +38,30 @@ body {
 
 }
 
+#gamermoder:hover {
+    background-color: #F27B7F;
+}
+
+.btn {
+    z-index: 10;
+    background-color: pink;
+    color: #e17228;
+}
+
+.active-btn {
+	box-shadow: inset 0px 0px 15px 3px #d5683d7b;
+    color: white;
+}
+
 .gaming {
-    background-color: linear-gradient(red,green,blue);
-    transition: 0 infinite background-color 9s;
+    background-color: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: colors 1s linear infinite;
+}
+
+@keyframes colors {
+    0%      {background-color: #14ffe9;}
+    50%     {background-color: #ffeb3b;}
+    100%    {background-color: #ff00e0;}
 }
 
 .main-container { grid-area: 2 / 5 / 5 / 8; }
@@ -60,10 +81,22 @@ body {
     justify-content: center;
 }
 
-.drawing-buttons > button {
-   border: none; 
+.drawing-buttons {
+    justify-content: flex-end;
 }
 
+.drawing-buttons > button {
+   border: none; 
+
+}
+
+.drawing-buttons > button:hover {
+    background-color: aliceblue;
+ }
+
+btn {
+    z-index: 100;
+}
 
 /* RANGE SLIDER, COURTESY OF https://www.cssportal.com/style-input-range/ */
 input[type=range] {
