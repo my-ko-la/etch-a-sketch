@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Prompt', sans-serif;
+    --rainbow-bg-color: purple;
 }
 
 body {
@@ -46,11 +47,12 @@ body {
     z-index: 10;
     background-color: pink;
     color: #e17228;
+    width: inherit;
 }
 
-.active-btn {
-	box-shadow: inset 0px 0px 15px 3px #d5683d7b;
-    color: white;
+.toggled-btn {
+    box-shadow: inset 0px 0px 15px 3px #d5683d7b;
+    color: white; 
 }
 
 .gaming {
@@ -62,6 +64,10 @@ body {
     0%      {background-color: #14ffe9;}
     50%     {background-color: #ffeb3b;}
     100%    {background-color: #ff00e0;}
+}
+
+.rainbow {
+    background-color: var(--rainbow-bg-color);
 }
 
 .main-container { grid-area: 2 / 5 / 5 / 8; }
